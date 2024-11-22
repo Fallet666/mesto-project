@@ -35,10 +35,10 @@ function createCard(name, link) {
 
     const likeCard = card.querySelector('.card__like-button');
     const deleteCard = card.querySelector('.card__delete-button');
-    likeCard.addEventListener('click', function() {
+    likeCard.addEventListener('click', function () {
         likeCard.classList.toggle('card__like-button_is-active');
     });
-    deleteCard.addEventListener('click', function() {
+    deleteCard.addEventListener('click', function () {
         card.remove();
     });
     card_image.addEventListener('click', function () {
@@ -53,11 +53,11 @@ function createCard(name, link) {
     return card;
 }
 
-function openPopup(popup) {      
+function openPopup(popup) {
     popup.classList.add('popup_is-opened');
 }
 
-function closePopup(popup) {      
+function closePopup(popup) {
     popup.classList.remove('popup_is-opened');
 }
 
@@ -67,6 +67,7 @@ function handleProfileFormSubmit(evt) {
     descriptionProfile.textContent = inputDescriptionProfile.value;
     closePopup(profilePopup);
 }
+
 profileForm.addEventListener('submit', handleProfileFormSubmit);
 
 editProfileButton.addEventListener('click', function () {
@@ -94,6 +95,7 @@ function handleCardFormSubmit(evt) {
     cardForm.reset();
     closePopup(cardPopup);
 }
+
 cardForm.addEventListener('submit', handleCardFormSubmit);
 
 
