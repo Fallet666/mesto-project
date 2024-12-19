@@ -1,2 +1,1 @@
-# mesto-project
-проект на js
+# Проектная работа Mesto
